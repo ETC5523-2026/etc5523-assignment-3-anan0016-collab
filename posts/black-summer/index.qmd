@@ -1,0 +1,32 @@
+---
+title: "The Black Summer wasn't just bad luck"
+subtitle: "What climate science can and can't tell you about the fire weather outside your door"
+author: "Anali Nanayakkara"
+date: "2026-10-12"
+categories: [climate, bushfires]
+---
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+## Is this the new normal?
+
+If you live anywhere near the bush in southeastern Australia, you probably remember where you were in the summer of 2019/20. The fires burned at least 19.4 million hectares, destroyed around 5,900 buildings and killed at least 34 people. Smoke reached cities hundreds of kilometres from any fire front, and nearly 80% of Australians said they were affected in some way [@vanoldenborgh2021].
+
+So the question most people asked afterwards was a simple one: was that a freak season, or is it going to keep happening? Put another way, did climate change make it more likely?
+
+That's harder to answer than it sounds. Bushfires have always been part of living in Australia, and no study can point at a single fire and say "climate change caused this one". What scientists *can* do is ask a narrower question: **have the weather conditions that make fires like this possible become more common?** That's the question an international team led by Geert Jan van Oldenborgh set out to answer, and their findings are what this post walks through.
+
+## Measuring "fire weather"
+
+To compare seasons fairly, you need one number that sums up how dangerous the weather is for fire. The researchers used the **Fire Weather Index**, a scale that combines four ingredients you'd recognise from any hot, windy day on a total fire ban: temperature, humidity, wind and recent rainfall. The higher the index, the more easily a fire starts and the faster it spreads.
+
+It's a good stand-in for the real thing. In this region, seasons with a high Fire Weather Index tend to be the seasons where the most land burns, especially from November to February [@vanoldenborgh2021]. And on that index, 2019/20 was the worst season on record.
+
+With a way to measure fire weather sorted, the next step was working out how often a season like that *should* happen, now compared with a century ago.
+
+## Where the evidence comes from
