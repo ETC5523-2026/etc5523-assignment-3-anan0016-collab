@@ -1,4 +1,21 @@
-/* css styles */
-.navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
+/* Colours stored once so every rule uses teh same palette */
+:root {
+  --paper: #faf7f2;
+  --ink: #23201c;
+  --muted: #6b645b;
+  --ember: #b5452b;
+  --line: #e6dfd4;
+}
+
+/* Page background and body text */
+body {
+  background-color: var(--paper);
+  color:var(--ink);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1a1714;
 }
