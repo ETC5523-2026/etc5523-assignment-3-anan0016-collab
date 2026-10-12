@@ -2,16 +2,19 @@ project:
   type: website
 
 website:
-  title: "blog-template"
+  title: "Anali Nanayakkara"
   navbar:
     right:
+      - href: index.qmd
+      - text: Posts
       - about.qmd
       - icon: github
-        href: https://github.com/etc5523-2022
+        href: https://github.com/anan0016-collab
 format:
   html:
     theme: cosmo
     css: styles.css
+    toc: true
 
 
 
