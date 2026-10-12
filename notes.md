@@ -35,6 +35,13 @@
 - **Why I made these decisions:** My Assignment 2 feedback said to give the reader the problem first and to mention FWI early so the results make sense. So those are the first two things in the post.
 - **Questions to revisit:** Does the FWI explanation make sense to someone with no science background? Does it sound like me?
 
+**12/10/2026 (later)**
+
+- **What I worked on:** Added references.bib with the van Oldenborgh et al. (2021) BibTeX, copied straight from the journal page. Added [which sections, e.g. "Where the evidence comes from" and "So, has it become more likely?"] and the first version of the likelihood plot.
+- **Design or analysis decisions:** Rebuilt Figure 6a from Assignment 2 as a simple bar chart instead of reusing the original image. Each bar is the lowest increase the evidence supports, the dot is the best estimate, and the dashed line at 1 means "same as 1900".
+- **Why I made these decisions:** The original figure had model names, a log scale and probability ratios, which my audience wouldn't understand. "How many times more likely" is something anyone can read.
+- **Questions to revisit:** Does the chart still make sense without reading the caption? Are the colours readable once I finish the CSS?
+
 ## Problems and solutions
 
 - **Problem:** Got a 404 when accepting the assignment.
@@ -49,6 +56,15 @@
 - **Problem:** `_site/` kept showing up as untracked in git.
 - **What caused it:** Quarto rebuilds the site into `_site/` every time I render.
 - **How I fixed it:** Added it to `.gitignore`, since `quarto publish gh-pages` handles the published HTML separately.
+
+- **Problem:** RStudio said my index.qmd had been deleted.
+- **What caused it:** Both the welcome post and my new post had a file called index.qmd. I had the welcome one open in a tab when I deleted the welcome folder, so I thought I'd lost my own post too.
+- **How I fixed it:** Checked with `ls posts/black-summer` and my file was still there. Closed the old tab and reopened the right one.
+- **What I learned:** Check the file path at the top of the tab before editing, since every post's file is called index.qmd.
+
+- **Problem:** The post needed a bibliography file before it could render.
+- **What caused it:** The YAML says `bibliography: references.bib` but the file didn't exist yet.
+- **How I fixed it:** Created references.bib in the post folder and pasted the BibTeX from the journal's download link.
 
 ## Final checks
 
