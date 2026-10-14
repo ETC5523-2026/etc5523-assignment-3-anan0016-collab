@@ -22,3 +22,5 @@ The more I worked with data, the more I realised the same dataset can mean compl
 That's what this blog is. It started with a question about whether Australia's farm forecasts can be trusted, and led me to the Black Summer bushfires and what climate change is doing to the places we live.
 
 If you're here, chances are you care about this stuff too. I try to keep life fun, but I also think our generation needs to stay informed and face what's actually happening, even when it's uncomfortable.
+
+*Site colours are from Shutterstock's [sustainable design colour palettes](https://www.shutterstock.com/blog/sustainable-design-color-palettes), picked to match the climate and farming topics on this blog.*
