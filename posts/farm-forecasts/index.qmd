@@ -3,7 +3,6 @@ title: "Can you trust Australia's farm forecasts?"
 subtitle: "22,500 forecasts, 24 commodities, and one question about the weather"
 author: "Anali Nanayakkara"
 date: "2026-06-14"
-categories: [climate, agriculture, forecasting]
 description: "I checked every ABARES farm forecast since 2000 against what actually happened. The answer depends on which one you're holding."
 bibliography: references.bib
 ---
