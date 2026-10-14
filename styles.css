@@ -19,3 +19,10 @@ h1, h2, h3 {
   font-family: Georgia, "Times New Roman", serif;
   color: #1a1714;
 }
+
+/* Smaller, italic "by Anali" in the homepage title */
+.title-by {
+  font-size: 0.5em;
+  font-style: italic;
+  font-weight: 400;
+}

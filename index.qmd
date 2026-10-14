@@ -1,5 +1,5 @@
 ---
-title: "ETC5523 Blog Assessment"
+title: "**Footnotes** [Unfolded]{.title-by}"
 listing:
   contents: posts
   sort: "date desc"
