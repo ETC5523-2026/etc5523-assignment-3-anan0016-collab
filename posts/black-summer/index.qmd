@@ -107,17 +107,17 @@ This is the part that surprises people. Drought is what most of us link with Bla
 
 That doesn't prove climate change had *no* effect on rainfall. It means the study couldn't detect one. What it could detect, clearly, was heat: a heatwave like the one in December 2019 would have been one to two degrees cooler in the climate of 1900.
 
-## What this means if you live near the bush
-
-Going back to the question we started with: Black Summer wasn't just bad luck. The weather that made it possible has become more common, and rising heat is the main reason why. Even the most cautious reading of the evidence puts the increase at 30%, and the researchers themselves think the real number is larger.
-
-It's also heading one way. At 2°C of global warming, the models suggest seasons like 2019/20 become around eight times more likely than in 1900, and at least four times. That projection rests on just two models, so treat it as a direction rather than a precise prediction.
-
 ::: {.finding}
 **One thing this study can't tell you**
 
 The Fire Weather Index measures *weather*, not fire. It says nothing about how much dry fuel is on the ground, what kind of vegetation is near your home, or what starts a fire in the first place. So "fire weather is more likely" doesn't mean "your house is X% more likely to burn". It means the days when a fire would be hard to stop are turning up more often.
 :::
+
+## What this means if you live near the bush
+
+Going back to the question we started with: Black Summer wasn't just bad luck. The weather that made it possible has become more common, and rising heat is the main reason why. Even the most cautious reading of the evidence puts the increase at 30%, and the researchers themselves think the real number is larger.
+
+It's also heading one way. At 2°C of global warming, the models suggest seasons like 2019/20 become around eight times more likely than in 1900, and at least four times. That projection rests on just two models, so treat it as a direction rather than a precise prediction.
 
 The practical takeaway is the one fire services have been repeating for years, now with stronger evidence behind it. Seasons that used to feel once-in-a-lifetime should be planned for as something that can happen again. Have a bushfire plan, know your local fire danger rating, and don't treat a bad summer as a reason to assume the next one will be quieter.
 
