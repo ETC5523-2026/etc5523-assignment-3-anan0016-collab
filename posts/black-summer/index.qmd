@@ -16,7 +16,7 @@ library(kableExtra)
 
 ## Is this the new normal?
 
-If you live anywhere near the bush in southeastern Australia, you probably remember where you were in the summer of 2019/20. The fires burned at least 19.4 million hectares, destroyed around 5,900 buildings and killed at least 34 people. Smoke reached cities hundreds of kilometres from any fire front, and nearly 80% of Australians said they were affected in some way [@vanoldenborgh2021].
+If you live anywhere near the bush in southeastern Australia, you probably remember where you were in the summer of 2019/20. The fires burned at least 19.4 million hectares, destroyed around 5,900 buildings and killed at least 34 people. Smoke reached cities hundreds of kilometres from any fire front, and nearly 80% of Australians said they were affected in some way [@vanoldenborgh2021]. The damage didn't stop at the fire front. A Monash study found hospital visits for breathing problems in NSW were 6% higher that season than in the two seasons before, and 45% higher in the New England and North West region [@guo2021].
 
 So the question most people asked afterwards was a simple one: was that a freak season, or is it going to keep happening? Put another way, did climate change make it more likely?
 
