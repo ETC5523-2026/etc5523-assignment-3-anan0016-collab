@@ -19,6 +19,12 @@
 - **What I changed:** Changed the homepage title from "ETC5523 Blog Assessment" to "Posts" and added a subtitle.
 - **Why I changed it:** The old title read like a placeholder, not a personal site.
 
+**14/10/2026**
+
+- **What I changed:** Renamed the homepage to "Footnotes by Anali", with "Footnotes" in bold and "by Anali" smaller and in italics. Fixed the navbar so Posts is one link instead of two.
+- **Why I changed it:** "ETC5523 Blog Assessment" read like a placeholder. I went through a few name ideas, thought "Behind the numbers" was too common, and landed on Footnotes since the blog pulls out the bits buried in research papers.
+- **Result after previewing:** The styled title only works on the homepage. The navbar name is plain text and can't be formatted, so I left that as my name.
+
 ## CSS and website design
 **11/10/2026**
 
@@ -26,6 +32,12 @@
 - **Why I chose this design:** Just wanted to see how the CSS actually changes the page before deciding on anything.
 - **What I noticed in the preview:** Very flat. Everything feels like it's everywhere, nothing stands out.
 - **Anything I still need to fix:** Headings need to be bigger, and the colours need to change.
+
+**14/10/2026**
+
+- **What I changed:** Added a `.title-by` class to make the "by Anali" part of the title smaller, italic and not bold.
+- **What I noticed in the preview:** Learned that you can tag part of a title with a class in the YAML and style just that bit in CSS.
+- **Anything I still need to fix:** Navbar, links, title banner and the `.finding` box still need styling.
 
 ## Blog post and visualisations
 **12/10/2026**
@@ -41,6 +53,19 @@
 - **Design or analysis decisions:** Rebuilt Figure 6a from Assignment 2 as a simple bar chart instead of reusing the original image. Each bar is the lowest increase the evidence supports, the dot is the best estimate, and the dashed line at 1 means "same as 1900".
 - **Why I made these decisions:** The original figure had model names, a log scale and probability ratios, which my audience wouldn't understand. "How many times more likely" is something anyone can read.
 - **Questions to revisit:** Does the chart still make sense without reading the caption? Are the colours readable once I finish the CSS?
+
+**13/10/2026**
+
+- **What I worked on:** Checked the post and references against each other.
+- **Design or analysis decisions:** Found my citation key in references.bib didn't match the one in the post, so citations wouldn't link up.
+- **Questions to revisit:** "Worst season on record" might overstate it, since the data only goes back to 1979. Need to check the Wind row against Figure 9 in the paper.
+
+**14/10/2026**
+
+- **What I worked on:** Rewrote my About page bio as a story and added a photo. Added a second post from my ETC5512 project on whether ABARES farm forecasts can be trusted, using the charts I'd already made for that assignment.
+- **Design or analysis decisions:** Used the saved chart images instead of the original code, since the code needs the raw ABARES and BOM data files, which aren't in this repo. Gave both posts a shared "climate" category so they'd link up on the homepage.
+- **Why I made these decisions:** One post felt thin for a personal site, and the farm project leads into the bushfire one through the rainfall finding. The About page now explains how I got from one topic to the other.
+- **Questions to revisit:** LinkedIn links still don't work on the About page or the farm post.
 
 ## Problems and solutions
 
@@ -65,6 +90,12 @@
 - **Problem:** The post needed a bibliography file before it could render.
 - **What caused it:** The YAML says `bibliography: references.bib` but the file didn't exist yet.
 - **How I fixed it:** Created references.bib in the post folder and pasted the BibTeX from the journal's download link.
+
+**14/10/2026**
+
+- **What I changed:** Renamed the homepage to "Footnotes by Anali", with "Footnotes" in bold and "by Anali" smaller and in italics. Fixed the navbar so Posts is one link instead of two.
+- **Why I changed it:** "ETC5523 Blog Assessment" read like a placeholder. I went through a few name ideas, thought "Behind the numbers" was too common, and landed on Footnotes since the blog pulls out the bits buried in research papers.
+- **Result after previewing:** The styled title only works on the homepage. The navbar name is plain text and can't be formatted, so I left that as my name.
 
 ## Final checks
 
