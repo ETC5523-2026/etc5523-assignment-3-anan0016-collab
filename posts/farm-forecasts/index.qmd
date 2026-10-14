@@ -56,7 +56,7 @@ It depends on which one you're holding. Lean on them for the short term. Treat l
 
 That rainfall pattern is also what got me thinking about climate more broadly, and eventually led to my post on the [Black Summer bushfires](../black-summer/index.qmd).
 
-*Built in R with tidyverse and Quarto for ETC5512 at Monash. I also shared a shorter version [on LinkedIn](www.linkedin.com/in/anali-thiyanga-100891287).*
+*Built in R with tidyverse and Quarto for ETC5512 at Monash. I also shared a shorter version [on LinkedIn](https://www.linkedin.com/in/anali-thiyanga-100891287).*
 
 ## References
 
