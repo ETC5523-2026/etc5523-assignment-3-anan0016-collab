@@ -1,0 +1,127 @@
+---
+title: "The Black Summer wasn't just bad luck"
+subtitle: "What climate science can and can't tell you about the fire weather outside your door"
+author: "Anali Nanayakkara"
+date: "2026-10-12"
+bibliography: references.bib
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+## Is this the new normal?
+
+If you live anywhere near the bush in southeastern Australia, you probably remember where you were in the summer of 2019/20. The fires burned at least 19.4 million hectares, destroyed around 5,900 buildings and killed at least 34 people. Smoke reached cities hundreds of kilometres from any fire front, and nearly 80% of Australians said they were affected in some way [@vanoldenborgh2021]. The damage didn't stop at the fire front. A Monash study found hospital visits for breathing problems in NSW were 6% higher that season than in the two seasons before, and 45% higher in the New England and North West region [@guo2021].
+
+So the question most people asked afterwards was a simple one: was that a freak season, or is it going to keep happening? Put another way, did climate change make it more likely?
+
+That's harder to answer than it sounds. Bushfires have always been part of living in Australia, and no study can point at a single fire and say "climate change caused this one". What scientists *can* do is ask a narrower question: **have the weather conditions that make fires like this possible become more common?** That's the question an international team led by Geert Jan van Oldenborgh set out to answer, and their findings are what this post walks through.
+
+## Measuring "fire weather"
+
+To compare seasons fairly, you need one number that sums up how dangerous the weather is for fire. The researchers used the **Fire Weather Index**, a scale that combines four ingredients you'd recognise from any hot, windy day on a total fire ban: temperature, humidity, wind and recent rainfall. The higher the index, the more easily a fire starts and the faster it spreads.
+
+It's a good stand-in for the real thing. In this region, seasons with a high Fire Weather Index tend to be the seasons where the most land burns, especially from November to February [@vanoldenborgh2021]. And on that index, 2019/20 was the worst season since detailed records began in 1979.
+
+With a way to measure fire weather sorted, the next step was working out how often a season like that *should* happen, now compared with a century ago.
+
+## Where the evidence comes from
+
+The study looked at the coastal strip between the Great Dividing Range and the sea, from roughly northern NSW down through eastern Victoria, which is where the damage was worst. It drew on three sources of evidence:
+
+- **Weather records.** A detailed reconstruction of the atmosphere called ERA5, covering 1979 to January 2020, plus Bureau of Meteorology station records going back to 1910 for temperature and 1900 for rainfall.
+- **Climate models.** Large sets of computer simulations of the climate, run both with and without the warming humans have added. Four of them were used to calculate the Fire Weather Index.
+- **A comparison between two worlds.** By comparing the simulated climate of around 1900 with today's, the researchers could estimate how much more likely a season like Black Summer has become.
+
+The models and the records don't fully agree, and that disagreement turns out to be one of the most important parts of the story.
+
+## So, has it become more likely?
+
+Yes. @fig-likelihood shows the main result. The climate models say fire weather as extreme as 2019/20 is **at least 30% more likely** than it was in the early 1900s, with a best estimate of around 80%. The actual weather records suggest a far bigger jump, at least four times as likely, although the authors think that figure is probably inflated because the record only starts in 1979.
+
+```{r}
+#| label: fig-likelihood
+#| echo: false
+#| fig-cap: "Every estimate says fire weather like Black Summer is more likely than it was in the early 1900s. Bars show the smallest increase each source can confidently support, and dots show the best estimate where one exists. The weather records have no upper limit, so there is no dot for that row. Values from @vanoldenborgh2021."
+#| fig-width: 8
+#| fig-height: 4
+
+likelihood <- tibble(
+  estimate = c("Today\n(climate models)",
+               "Today\n(weather records since 1979)",
+               "At 2°C of warming\n(climate models)"),
+  at_least = c(1.3, 4, 4),
+  best     = c(1.8, NA, 8)
+)
+
+ggplot(likelihood, aes(x = at_least, y = fct_rev(fct_inorder(estimate)))) +
+  geom_col(fill = "#E98E62", width = 0.5) +
+  geom_point(aes(x = best), size = 4, na.rm = TRUE) +
+  geom_vline(xintercept = 1, linetype = "dashed", colour = "grey40") +
+  scale_x_continuous(breaks = c(1, 2, 4, 6, 8),
+                     labels = c("Same as\n1900", "2×", "4×", "6×", "8×")) +
+  labs(x = "How many times more likely than in the early 1900s",
+       y = NULL) +
+  theme_minimal(base_size = 13)
+```
+
+Why such a gap between the models and the records? The models are known to underestimate how fast heatwaves have been getting hotter. Because heat is the biggest driver of the increase (more on that next), that weakness drags their answer down. So the 30% figure is best read as a **floor, not a forecast**. The true increase is probably higher. It's just the most the researchers could defend with the tools they had.
+
+## It's the heat, not (only) the drought
+
+If fire weather has got worse, the obvious next question is which ingredient changed. @tbl-ingredients breaks it down.
+
+```{r}
+#| label: tbl-ingredients
+#| echo: false
+#| tbl-cap: "Heat is the ingredient that climate change has pushed hardest. Rainfall, the one most people blame, shows no long-term change the study could link to warming."
+
+ingredients <- tibble(
+  Ingredient = c("Heat", "Humidity", "Wind", "Rainfall"),
+  `Why it matters for fire` = c(
+    "Dries out leaves, grass and bark so they catch and burn faster",
+    "Dry air pulls moisture out of fuel",
+    "Pushes a fire forward and carries embers ahead of it",
+    "Wet fuel is hard to ignite"
+  ),
+  `What changed since the early 1900s` = c(
+    "The biggest single driver in most models. A heatwave like December 2019 is at least twice as likely, and weather records suggest about ten times",
+    "Drier air added to the risk, and was the main driver in one of the four models",
+    "A smaller part of the increase, and it mattered more in some models than others",
+    "No long-term trend linked to warming. The 2019 drought was real, but more than half of it came from two natural climate patterns"
+  )
+)
+
+ingredients |>
+  kable() |>
+  kable_classic(full_width = TRUE) |>
+  row_spec(1, bold = TRUE, background = "#FBCCA6")
+```
+
+This is the part that surprises people. Drought is what most of us link with Black Summer, and 2019 really was Australia's driest year on record. But when the researchers looked for a long-term drying trend caused by climate change, they couldn't find one. More than half of the rainfall shortfall from July to December 2019 came from two natural climate patterns in the oceans and atmosphere around Australia, which happened to line up badly that year [@vanoldenborgh2021].
+
+That doesn't prove climate change had *no* effect on rainfall. It means the study couldn't detect one. What it could detect, clearly, was heat: a heatwave like the one in December 2019 would have been one to two degrees cooler in the climate of 1900.
+
+::: {.finding}
+**One thing this study can't tell you**
+
+The Fire Weather Index measures *weather*, not fire. It says nothing about how much dry fuel is on the ground, what kind of vegetation is near your home, or what starts a fire in the first place. So "fire weather is more likely" doesn't mean "your house is X% more likely to burn". It means the days when a fire would be hard to stop are turning up more often.
+:::
+
+## What this means if you live near the bush
+
+Going back to the question we started with: Black Summer wasn't just bad luck. The weather that made it possible has become more common, and rising heat is the main reason why. Even the most cautious reading of the evidence puts the increase at 30%, and the researchers themselves think the real number is larger.
+
+It's also heading one way. At 2°C of global warming, the models suggest seasons like 2019/20 become around eight times more likely than in 1900, and at least four times. That projection rests on just two models, so treat it as a direction rather than a precise prediction.
+
+The practical takeaway is the one fire services have been repeating for years, now with stronger evidence behind it. Seasons that used to feel once-in-a-lifetime should be planned for as something that can happen again. Have a bushfire plan, know your local fire danger rating, and don't treat a bad summer as a reason to assume the next one will be quieter.
+
+## References
+
+::: {#refs}
+:::

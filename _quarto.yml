@@ -2,16 +2,27 @@ project:
   type: website
 
 website:
-  title: "blog-template"
+  title: "Anali Nanayakkara"
   navbar:
     right:
+      - href: index.qmd
+        text: Posts
       - about.qmd
       - icon: github
-        href: https://github.com/etc5523-2022
+        href: https://github.com/anan0016-collab
+  page-footer:
+    left: "¹ Written and built by Anali Nanayakkara, Master of Business Analytics, Monash University"
+    right:
+      - icon: github
+        href: https://github.com/anan0016-collab
+      - icon: linkedin
+        href: https://www.linkedin.com/in/anali-thiyanga-100891287
+      - icon: envelope
+        href: mailto:anan0016@student.monash.edu
 format:
   html:
     theme: cosmo
     css: styles.css
-
+    toc: true
 
 

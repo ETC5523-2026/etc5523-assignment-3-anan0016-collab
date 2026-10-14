@@ -1,4 +1,90 @@
-/* css styles */
-.navbar-dark, .quarto-title-banner {
-  background-color: #006DAE;
+/* Palette from Shutterstock's sustainable design colour palettes */
+:root {
+  --paper: #faf7f2;      /* page background, kept neutral for reading */
+  --ink: #23201c;        /* body text */
+  --muted: #6b645b;      /* captions */
+  --terracotta: #E98E62;
+  --peach: #FBCCA6;
+  --sage: #B7DEAD;
+  --raspberry: #CA477D;
+  --blush: #F2CCDA;
+}
+
+/* Page background and body text */
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1a1714;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--raspberry);
+}
+
+/* Smaller, italic "by Anali" in the homepage title */
+.title-by {
+  font-size: 0.5em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--paper);
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--ink);
+}
+
+/* Title banner */
+.quarto-title-banner {
+  background-color: var(--peach);
+}
+
+.quarto-title-banner .title,
+.quarto-title-banner .subtitle {
+  color: var(--ink);
+}
+
+/* Links */
+a {
+  color: var(--raspberry);
+  text-decoration: underline;
+}
+
+/* Captions */
+.figure-caption,
+caption {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* Limitation box */
+.finding {
+  border-left: 6px solid var(--raspberry);
+  background-color: var(--sage);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+/* Footer */
+.nav-footer {
+  background-color: var(--blush);
+  color: var(--ink);
+  font-size: 0.85rem;
+}
+
+.nav-footer a {
+  color: var(--ink);
 }
