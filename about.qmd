@@ -7,6 +7,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/ETC5523-2026/etc5523-assignment-3-anan0016-collab
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/anali-thiyanga-100891287
 
 ---
 
