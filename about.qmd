@@ -6,8 +6,16 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com/etc5523-2022
+      href: https://github.com/ETC5523-2026/etc5523-assignment-3-anan0016-collab
 
 ---
 
-This is a blog template for the ETC5523 Communicating with Data assessment at Monash University.
+Hi, I'm Anali.
+
+I studied Banking & Finance and Business Analytics at Monash, and somewhere along the way I noticed the numbers were never the hard part. The hard part was what came after: explaining them to someone who actually had to make a decision. So I came back for a Master of Business Analytics to get better at exactly that.
+
+The more I worked with data, the more I realised the same dataset can mean completely different things depending on who's holding it. A forecast table that makes sense to an economist means nothing to a farmer watching the sky. A climate study written for scientists doesn't help the family deciding whether to stay or leave on a bad fire day. I like figuring out how to close that gap.
+
+That's what this blog is. It started with a question about whether Australia's farm forecasts can be trusted, and led me to the Black Summer bushfires and what climate change is doing to the places we live.
+
+If you're here, chances are you care about this stuff too. I try to keep life fun, but I also think our generation needs to stay informed and face what's actually happening, even when it's uncomfortable.
