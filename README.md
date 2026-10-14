@@ -10,4 +10,4 @@ https://chatgpt.com/share/6acf154f-5024-83ec-aa42-86dfbdcc9485
 
 * The author of this blog is **Anali Nanayakkara**, 34102027.
 
-* The URL for this blog is [https://etc5523-2023.github.io/blog-template/](https://etc5523-2023.github.io/blog-template/)
+* The URL for this blog is [https://etc5523-2026.github.io/etc5523-assignment-3-anan0016-collab/)
