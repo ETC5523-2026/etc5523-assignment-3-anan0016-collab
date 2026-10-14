@@ -10,7 +10,15 @@ website:
       - about.qmd
       - icon: github
         href: https://github.com/anan0016-collab
-
+  page-footer:
+    left: "¹ Written and built by Anali Nanayakkara, Master of Business Analytics, Monash University"
+    right:
+      - icon: github
+        href: https://github.com/anan0016-collab
+      - icon: linkedin
+        href: https://www.linkedin.com/in/YOUR-LINKEDIN
+      - icon: envelope
+        href: mailto:YOUR-EMAIL
 format:
   html:
     theme: cosmo
